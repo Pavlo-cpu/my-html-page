@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблиця характеристик продукту</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-family: Arial, sans-serif;
+        }
+        th, td {
+            padding: 12px;
+            text-align: center;
+            border: 2px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        th {
+            background-color: #3E8E41;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover td {
+            background-color: #e1f5e1;
+        }
+        caption {
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #333;
+            padding: 10px;
+            background-color: white;
+            font-family: Arial, sans-serif;
+        }
+        td {
+            font-size: 0.9em;
+            color: #555;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+
+<table>
+    <caption>Характеристики продукту</caption>
+    <thead>
+        <tr>
+            <th rowspan="2">Характеристика</th>
+            <th rowspan="2">Одиниці</th>
+            <th colspan="4">Модель</th>
+        </tr>
+        <tr>
+            <th>Модель А</th>
+            <th>Модель В</th>
+            <th>Модель С</th>
+            <th>Модель D</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="1">Вага</td>
+            <td>кг</td>
+            <td>10</td>
+            <td>12</td>
+            <td>15</td>
+            <td>18</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Розміри (Ш×Д×В)</td>
+            <td>мм</td>
+            <td>200×150×100</td>
+            <td colspan="2">250×180×120</td>
+            <td>300×200×140</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Споживана потужність</td>
+            <td>Вт</td>
+            <td>50</td>
+            <td>60</td>
+            <td colspan="2">75</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Рівень шуму</td>
+            <td>дБ</td>
+            <td>25</td>
+            <td>28</td>
+            <td>30</td>
+            <td>32</td>
+        </tr>
+        <tr>
+            <td rowspan="1">Напруга живлення</td>
+            <td>В/Ф/Гц</td>
+            <td colspan="2">220/1/50</td>
+            <td colspan="2">380/3/50</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+</html>
